@@ -1,0 +1,46 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.custom-title-panel {
+  background-color: @pane-item-background-color;
+  line-height: 35px;
+  display: flex;
+
+  .icon {
+    // background-color: red;
+    width: 32px;
+
+    span.icon {
+      // background-color: green;
+    }
+
+    span.icon::before {
+      margin: 0 8px;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    div {
+      line-height: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    div:hover {
+      background-color: #111;
+    }
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+  }
+
+  .control {
+  }
+}

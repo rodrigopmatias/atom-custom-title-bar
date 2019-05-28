@@ -1,0 +1,40 @@
+{
+  "name": "custom-title-panel",
+  "main": "./lib/index",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {},
+  "repository": "https://github.com/atom/custom-title-panel",
+  "license": "MIT",
+  "engines": {
+    "atom-space-pen-views": "^2.2.0"
+  },
+  "atomTranspilers": [
+    {
+      "glob": "**/*.js",
+      "transpiler": "atom-babel6-transpiler",
+      "options": {
+        "babel": {
+          "babelrc": false,
+          "presets": [
+            "env",
+            "react"
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": {
+    "atom-babel6-transpiler": "^1.2.0",
+    "atom-space-pen-views": "^2.2.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  }
+}
